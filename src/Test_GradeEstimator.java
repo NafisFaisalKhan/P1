@@ -50,6 +50,8 @@ public class Test_GradeEstimator {
 		
 		test("test07 Grade File Exists", "grade_info_bad1.txt", "GradeFileFormatException");
 		
+		test("test08 Grade File Exists", "grade_info_bad_min.txt", "Letter Grade Estimate: ");
+		
 	}
 	 
 

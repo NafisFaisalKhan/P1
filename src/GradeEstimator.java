@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GradeEstimator {
@@ -145,7 +144,8 @@ public class GradeEstimator {
 				break;
 				
 			}
-				
+			
+			else {grade = "unable to estimate letter grade for "+ totalScore ;}
 		}
 		
 		gradeReport += String.format("  %5.2f%s %s \n%s %s",totalScore,"%","weighted percent","Letter Grade Estimate:",grade ); 
@@ -208,7 +208,7 @@ public class GradeEstimator {
 		
 		i = 0;
 		
-		while(fileInput.hasNextLine() && i <gradeInfo.length){
+		while(fileInput.hasNextLine() && i < gradeInfo.length){
 			
 			String x = fileInput.nextLine();
 			
